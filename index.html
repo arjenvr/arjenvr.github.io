@@ -2,67 +2,46 @@
 <html lang="en">
 <head>
 <title>Arjen van Reeven</title>
-<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,600' rel='stylesheet' type='text/css' />
-<meta name="description" content="Arjen van Reeven is a product designer specialising in mobile.">
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css' />
+<meta name="description" content="Personal website of Arjen van Reeven">
 <style type="text/css">
 * {
   font-family: 'Work Sans', sans-serif;
   margin: 0;
   padding: 0;
 }
+body {
+  background: rgb(51, 81, 82);
+  color: rgb(209, 225, 224);
+}
 header {
-  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  height: 100vh;
 }
-header, section, footer {
-  margin-left: 2em;
-  margin-right: 2em;
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
 }
-a {
-  color: rgba(0,0,0,1);
+header>img {
+  border-radius: 50%;
+  flex: none;
+  flex-grow: 0;
+
 }
-a:hover {
-  color: rgba(0,0,0,.6);
-}
-h1, h2 {
-  font-weight: 600;
-  margin-top: 1.66em;
-  margin-bottom: 0.83em;
-}
-#contact ul {
-  list-style: none;
-  padding: 0;
-}
-#contact li {
-  display: inline;
-}
-footer {
-  margin-top: 4em;
-}
-footer p {
-  margin-top: 1.66em;
-  opacity: 0.2;
-  font-variant: small-caps;
-}
-.blocks-first, .blocks-even, .blocks-uneven, .blocks-last {
-  background-image: url(block.svg);
-  background-size: 478px;
-  background-repeat: repeat-x;
-  background-position: top;
-  height: 428px;
-}
-.blocks-first {
-  clear: both;
-  margin: auto -2em;
-}
-.blocks-even, .blocks-last {
-  margin: -245px -2em;
-  background-position: calc(50% + 242px) top;
-}
-.blocks-uneven {
-  margin: -245px -2em;
-}
-.blocks-last {
-  height: 245px;
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+  background: -webkit-linear-gradient(-45deg, rgb(255,244,235) 0%, rgb(209,225,224) 100%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
@@ -70,40 +49,17 @@ footer p {
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Arjen van Reeven" />
 <meta property="og:image" content="http://arjenvr.nl/arjenvr.jpg" />
-<meta property="og:description" content="Arjen van Reeven is a product designer specialising in mobile." />
+<meta property="og:description" content="Personal website of Arjen van Reeven" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@arjenvr" />
 <meta name="twitter:title" content="Arjen van Reeven" />
-<meta name="twitter:description" content="Arjen van Reeven is a product designer specialising in mobile." />
+<meta name="twitter:description" content="Personal website of Arjen van Reeven" />
 <meta name="twitter:image" content="http://arjenvr.nl/arjenvr.jpg" />
 </head>
 <body>
-<header>
-  <svg width="117" height="107" viewBox="0 0 117 107" xmlns="http://www.w3.org/2000/svg">
-    <path d="M35.91 65.952h29.034l16.704 38.592H68.256v2.016h48.384v-2.016h-12.384L58.896 0h-3.888l-8.972 21.857 18.188 42.08h-35.46l-.827 2.015h7.972zm-8.694 38.6v2.008H0v-2.008h27.216z" fill-rule="evenodd"/>
-  </svg>
-</header>
-<section id="about">
-  <h1>My name is Arjen van Reeven.</h1>
-  <p>I'm a product designer specialising in mobile, currently working at <a href="https://ngti.nl/">NGTI</a>. My interests include user experience design, accessibility, branding, typography, motion design, sound design, user research and photography.</p>
-</section>
-<section id="work">
-  <h2>I make products that get people talking.</h2>
-  <p>For example, I worked on <a href="https://io.swisscom.ch/">Swisscom iO</a> and <a href="http://www.nimbuzz.com/">Nimbuzz</a>.</p>
-</section>
-<section id="contact">
-  <h2>Talk to me.</h2>
-  <ul>
-    <li><a href="mailto:arjen@arjenvr.nl?subject=Contact">Email</a></li>
-    <li><a href="https://twitter.com/arjenvr" rel="me">Twitter</a></li>
-    <li><a href="https://linkedin.com/in/arjenvr" rel="me">LinkedIn</a></li>
-  </ul>
-</section>
-<footer>
-  <div class="blocks-first"></div>
-  <div class="blocks-even"></div>
-  <div class="blocks-uneven"></div>
-  <div class="blocks-last"></div>
-</footer>
+  <header>
+    <img src="arjenvr.jpg" width="128" height="128" />
+    <h1>Arjen van Reeven</h1>
+  </header>
 </body>
 </html>
